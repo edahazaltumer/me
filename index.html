@@ -558,8 +558,11 @@
     </div>
 
   </main>
-  <span class="copyright">Copyright @2025 Eda Hazal TÜMER</span>
+  <span class="copyright">Copyright @<span id="copyright-year"></span> Eda Hazal TÜMER</span>
   <div id="vanta-canvas" class="vanta-net"></div>
+  <script>
+    document.getElementById("copyright-year").textContent = new Date().getFullYear();
+  </script>
   <script>
     VANTA.NET({
       el: "#vanta-canvas",

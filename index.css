@@ -272,6 +272,7 @@ h3~.group {
     color: var(--second-level-text);
     font-size: 0.75rem;
     text-align: center;
+    z-index: 7;
 }
 
 /* Product Cards List and Card Layout */
