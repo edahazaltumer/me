@@ -1,13 +1,13 @@
 :root {
-    --background: #070707;
+    --background: #111111;
     --first-level-border: #666666;
     --second-level-border: #222222;
     --first-level-background: #0b0b0b;
     --second-level-background: #080808;
-    --first-level-text: #f7f7f7;
-    --second-level-text: #a0a0a0;
-    --third-level-text: #434343;
-    --button-background: #171717;
+    --first-level-text: #f9f9f9;
+    --second-level-text: #a9a9a9;
+    --third-level-text: #535353;
+    --button-background: #272727;
     --button-border: #333333;
 }
 
@@ -70,6 +70,7 @@ main {
 h1,
 h2,
 h3,
+h4,
 p {
     margin: 0;
 }
@@ -86,6 +87,9 @@ h1 {
 h1~p {
     font-size: 1.5rem;
     text-align: center;
+    &.text-regular {
+        color: var(--second-level-text);
+    }
 }
 
 h2 {
@@ -100,6 +104,9 @@ h3 {
     margin-top: 35px;
     text-align: start;
     align-self: flex-start;
+    &.text-regular {
+        color: var(--second-level-text);
+    }
 }
 
 .c-1 a,
@@ -325,6 +332,25 @@ h3~.group {
     color: var(--first-level-text);
     font-size: 1.25rem;
     margin: 0;
+    white-space: normal;
+    line-height: 1.4;
+}
+
+.publication-category {
+    font-family: "Zen Kaku Gothic Antique", sans-serif;
+    font-weight: 300;
+    font-size: 1.15rem;
+    color: var(--second-level-text);
+    margin-top: 24px;
+    padding-left: 4px;
+    align-self: flex-start;
+    letter-spacing: 0.5px;
+    /*text-transform: uppercase;*/
+}
+
+.author-highlight {
+    color: var(--first-level-text);
+    font-weight: 500;
 }
 
 .product-description {
